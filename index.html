@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <script src="https://kit.fontawesome.com/ac95c313b7.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Formulario Ejecutivo</title>
+</head>
+<body>
+  <header class="speaker-form-header">
+    <h1>Formulario</h1>
+    <p><em>Este formulario es para envío de correos</em></p>
+  </header>
+  <form action="form.php" method="post" class="speaker-form">
+    <div class="form-row">
+      <label for="nombre">Nombre:</label>
+      <input id="nombre" name="nombre" class="nombre" type="text"/>
+    </div>
+    <div class="form-row">
+      <label for="email">Email:</label>
+      <input id="email" name="email" class="email" type="email"/>
+    </div>
+    <fieldset class="legacy-form-row">
+      <legend> Género:</legend>
+      <input id="talk-type-1" name="talk-type" type="radio" value="main stage"/>
+      <label for="talk-type-1" class="radio-label">Masculino</label>
+      <input id="talk-type-2" name="talk-type" type="radio" value="workshop" checked/>
+      <label for="talk-type-2" class="radio-label">Femenino</label>
+    </fieldset>
+    <div class="form-row">
+      <label for="mensaje">Mensaje</label>
+      <textarea id="mensaje" name="mensaje"></textarea>
+      <div class="instructions"> Sea claro en su mensaje...</div>
+    </div>
+    <div class="form-row">
+      <button>Submit</button>
+    </div>
+  </form>
+</body>
+</html>
+
